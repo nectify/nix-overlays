@@ -1782,6 +1782,8 @@ with oself;
       inherit menhirLib menhirSdk menhir;
     };
 
+  reason-react = callPackage ./reason-react { };
+
   rtop = callPackage ./reason/rtop.nix { };
 
   reason-native = osuper.reason-native.overrideScope' (rself: rsuper: {
